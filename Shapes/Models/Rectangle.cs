@@ -1,3 +1,5 @@
+using System;
+
 namespace Shapes.Models
 {
   public class Rectangle
@@ -24,6 +26,7 @@ namespace Shapes.Models
       {
         return false;
       }
+      
     }
   }
 }
