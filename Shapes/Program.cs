@@ -59,7 +59,7 @@ namespace Shapes
           int userLength = int.Parse(Console.ReadLine());
           Square uSquare = new Square(userLength);
           int resArea = uSquare.GetArea();
-          Console.WriteLine("The area of your square is: " + resArea);
+          Console.WriteLine("\nThe area of your square is: " + resArea);
           Console.WriteLine("Now let's transform you square in to a cube...\n");
           Cube uCube = new Cube(uSquare);
           int resVol = uCube.GetVolume();
@@ -78,8 +78,14 @@ namespace Shapes
           Circle uCircle = new Circle(userRadius);
           double resCircum = uCircle.GetCircumference();
           double resArea = uCircle.GetArea();
-          Console.WriteLine("The Circumference of your Cirlce is: " + resCircum);
+          Console.WriteLine("\nThe Circumference of your Cirlce is: " + resCircum);
           Console.WriteLine("The Area of you Circle is: " + resArea);
+          Console.WriteLine("Now let's transform your Circle in to a Sphere...");
+          Sphere newSphere = new Sphere(uCircle);
+          double resVol = newSphere.GetVolume();
+          double resSur = newSphere.GetSurfaceArea();
+          Console.WriteLine("The Volume of your Sphere is: " + resVol);
+          Console.WriteLine("The Surface Area of your Sphere is: " + resSur);
           //Prompt to keep while loop going (keep playing)
           Console.WriteLine("\nTap enter to try again or type \"s\" to Quit.");
           keepGoing = Console.ReadLine();
