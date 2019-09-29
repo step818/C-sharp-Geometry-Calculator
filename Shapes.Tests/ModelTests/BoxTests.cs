@@ -4,27 +4,27 @@ using Shapes.Models;
 namespace Shapes.Tests
 {
   [TestClass]
-  public class CubeTests
+  public class BoxTests
   {
     [TestMethod]
-    public void GetVolume_VolumeOfCube_Int()
+    public void GetVolume_VolumeOfBox_Int()
     {
       //Arrange
       Rectangle newRect = new Rectangle(5,4);
-      Cube newCube = new Cube(newRect);
+      Box newBox = new Box(newRect);
       //Act
-      int result = newCube.GetVolume();
+      int result = newBox.GetVolume();
       //Assert
       Assert.AreEqual(100, result);
     }
     [TestMethod]
-    public void GetSurfaceArea_OfCube_Int()
+    public void GetSurfaceArea_OfBox_Int()
     {
       //Arrange
       Rectangle newRect = new Rectangle(4,4);
-      Cube newCube = new Cube(newRect);
+      Box newBox = new Box(newRect);
       //Act
-      int result = newCube.GetSurfaceArea();
+      int result = newBox.GetSurfaceArea();
       //Assert
       Assert.AreEqual(96, result);
     }

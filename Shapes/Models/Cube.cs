@@ -2,16 +2,15 @@ namespace Shapes.Models
 {
   public class Cube
   {
-    public Rectangle EqualSide { get; set; }
-    public Cube (Rectangle side)
+    public Square EqualSide { get; set; }
+    public Cube (Square side)
     {
       EqualSide = side;
     }
     public int GetVolume()
     {
       int length = EqualSide.Length;
-      int width = EqualSide.Width;
-      return length * width * length;
+      return length * length * length;
     }
     public int GetSurfaceArea()
     {
